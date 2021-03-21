@@ -1,0 +1,123 @@
+html {
+  font-size: '100%';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  all: unset;
+  margin: 4.75rem 5rem;
+  line-height: 1.3;
+  color: white;
+  background-color: #674baf;
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 556px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: contain;
+  }
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+header img {
+  width: 15rem;
+  height: 2.5rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.container img {
+  width: 695px;
+  height: 495px;
+}
+
+@media (max-width: 768px) {
+  .container img {
+    margin: auto;
+    width: 591px;
+    height: 417px;
+  }
+}
+
+@media (max-width: 556px) {
+  .container img {
+    margin: auto;
+    width: 450px;
+    height: 350px;
+  }
+}
+
+.container__hero {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .container__hero {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.container__hero .button {
+  margin-top: 3.125rem;
+}
+
+.container__hero .button a {
+  color: #674baf;
+  border-radius: 30px;
+  background-color: white;
+  padding: 1.25rem 3.9375rem;
+}
+
+.container__hero .button a:hover {
+  color: white;
+  background-color: #e882e8;
+}
+/*# sourceMappingURL=style.css.map */
