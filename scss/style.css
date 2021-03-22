@@ -10,8 +10,7 @@ html {
 }
 
 body {
-  all: unset;
-  margin: 5rem 4.75rem;
+  margin: 4.75rem 5rem;
   line-height: 1.3;
   color: white;
   background-color: #674baf;
@@ -96,6 +95,7 @@ header img {
 }
 
 .container__hero {
+  margin-left: 50px;
   width: 40%;
 }
 

@@ -8,24 +8,24 @@ header{
     }
 }
 
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    @media (max-width: 768px){
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 695px;
+        height: 495px;
         @media (max-width: 768px){
-            text-align: center;
-            flex-wrap: wrap;
+            margin: auto;
+            width: 591px;
+            height: 417px;
         }
-
-        img{
-            width: 695px;
-            height: 495px;
-            @media (max-width: 768px){
-                margin: auto;
-                width: 591px;
-                height: 417px;
-            }
 
             @media (max-width: 556px){
                 margin: auto;
@@ -35,6 +35,7 @@ header{
         }
 
         &__hero{
+            margin-left: 50px;
             width: 40%;
             @media (max-width: 768px){
                 width: 100%;
@@ -63,7 +64,7 @@ header{
         }
 
 
-    }
+}
 
 
 
