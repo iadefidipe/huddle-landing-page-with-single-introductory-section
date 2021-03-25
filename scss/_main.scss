@@ -1,9 +1,14 @@
+
+
 header{
 
 
     margin-bottom: 100px ;
     img{
         width: 30%;
+        @media(max-width:768px){
+            width: 50%;
+        }
         
     }
 }
@@ -24,13 +29,13 @@ header{
         
         @media (max-width: 768px){
             margin: auto;
-            width: 80%;
+            width: 90%;
             
         }
 
     }
 
-        &__hero{
+        &__text{
             margin-left: 50px;
             width: 40%;
             @media (max-width: 768px){

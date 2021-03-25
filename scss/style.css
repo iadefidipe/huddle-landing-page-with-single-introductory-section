@@ -12,6 +12,8 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
   line-height: 1.3;
   color: white;
   background-color: #674baf;
@@ -22,9 +24,8 @@ body {
 
 @media (max-width: 768px) {
   body {
-    margin: 3rem auto;
     background-image: url(/images/bg-mobile.svg);
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -44,6 +45,12 @@ h1 {
   font-size: 1.875rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -66,6 +73,12 @@ header {
 
 header img {
   width: 30%;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 50%;
+  }
 }
 
 .hero {
@@ -97,27 +110,27 @@ header img {
 @media (max-width: 768px) {
   .hero img {
     margin: auto;
-    width: 80%;
+    width: 90%;
   }
 }
 
-.hero__hero {
+.hero__text {
   margin-left: 50px;
   width: 40%;
 }
 
 @media (max-width: 768px) {
-  .hero__hero {
+  .hero__text {
     width: 100%;
     margin: auto;
   }
 }
 
-.hero__hero .button {
+.hero__text .button {
   margin: 2rem auto;
 }
 
-.hero__hero .button input[type=button] {
+.hero__text .button input[type=button] {
   color: #674baf;
   text-align: center;
   border-radius: 30px;
@@ -128,13 +141,13 @@ header img {
   border: none;
 }
 
-.hero__hero .button input[type=button]:hover {
+.hero__text .button input[type=button]:hover {
   color: white;
   background-color: #e882e8;
 }
 
 @media (max-width: 768px) {
-  .hero__hero .button input[type=button] {
+  .hero__text .button input[type=button] {
     margin: auto;
   }
 }
